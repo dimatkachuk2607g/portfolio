@@ -1,2 +1,2 @@
-# \# Dima Tkachuk Portfolio
+# Dima Tkachuk Portfolio
 
