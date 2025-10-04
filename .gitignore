@@ -1,4 +1,4 @@
-# --- Python ---
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
@@ -48,7 +48,7 @@ coverage.xml
 .idea/
 *.iml
 
-# VS Code (in case you ever use it)
+# VS Code
 .vscode/
 
 # System files
