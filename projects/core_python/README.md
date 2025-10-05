@@ -15,5 +15,5 @@ make sure to only run the tests from the **projects** folder using the command:
 
 ```bash
 
-python -m pytest core\_python/tests
+python -m pytest core_python/tests
 

@@ -1,3 +1,8 @@
+"""
+Tests for pc_builder Project, testing both valid and invalid inputs,
+also includes mocking user input for the testing
+"""
+
 import core_python.src.pc_builder as pcb
 import pytest
 import json

@@ -1,13 +1,14 @@
 """
 PC Builder Project
 
-This script allows users to select a PC build (low, mid or high budget) and
+This project allows users to select a PC build (low, mid or high budget) and
 platform (AMD or Intel)
 loads component details from a JSON file, and prints a summary with full details
 """
 
 import json
 from pathlib import Path
+
 
 def get_build_choice():
     """Prompt the user to select a valid build type"""
@@ -57,17 +58,19 @@ def json_load_parts():
 
 
 def print_summary(customer_build):
-    total_order_price = sum(customer_build.values())
+    """Prints a detailed summary of the parts, part value and total cost"""
+    total_build_price = sum(customer_build.values())
 
+    print()
     print("=" * 100)
-    print("\nBuild and price details:")
+    print("Build and price details:")
     print("=" * 100)
 
     for part, price in customer_build.items():
         print(f'Part: {part:<60}| \t\t\t Value: ${price}')
 
     print("=" * 100)
-    print(f'Total order price: ${total_order_price}')
+    print(f'Total build price: ${total_build_price}')
     print("=" * 100)
     print(f'Thanks for using the PC Builder!')
 
