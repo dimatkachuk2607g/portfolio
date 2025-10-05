@@ -9,36 +9,23 @@ import json
 from pathlib import Path
 from unittest.mock import patch
 
-def test_get_build_choice_valid_and_invalid_1():
-    inputs = [" ", "abc", "2"]
+@pytest.mark.parametrize("inputs,expected", [
+    ([" ", "abc", "2"], "2"),
+    (["", "olp", "2"], "2"),
+    ([" ", "abc", "3"], "3"),
+])
+def test_get_build_choice(inputs, expected):
     with patch("builtins.input", side_effect=inputs):
-        choice = pcb.get_build_choice()
-        assert choice == "2"
-
-def test_get_build_choice_valid_and_invalid_2():
-    inputs = ["", "olp", "2"]
-    with patch("builtins.input", side_effect=inputs):
-        choice = pcb.get_build_choice()
-        assert choice == "2"
-
-def test_get_build_choice_valid_and_invalid_3():
-    inputs = [" ", "abc", "3"]
-    with patch("builtins.input", side_effect=inputs):
-        choice = pcb.get_build_choice()
-        assert choice == "3"
+        assert pcb.get_build_choice() == expected
 
 
-def test_get_platform_choice_valid_and_invalid_1():
-    inputs = [" ", "qwe", "1"]
+@pytest.mark.parametrize("inputs,expected", [
+    ([" ", "qwe", "1"], "1"),
+    ([" ", "awq", "2"], "2"),
+])
+def test_get_platform_choice(inputs, expected):
     with patch("builtins.input", side_effect=inputs):
-        choice = pcb.get_platform_choice()
-        assert choice == "1"
-
-def test_get_platform_choice_valid_and_invalid_2():
-    inputs = [" ", "awq", "2"]
-    with patch("builtins.input", side_effect=inputs):
-        choice = pcb.get_platform_choice()
-        assert choice == "2"
+        assert pcb.get_platform_choice() == expected
 
 
 def test_json_load_parts():
