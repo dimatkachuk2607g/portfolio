@@ -17,18 +17,21 @@ python -m pytest core_python/tests
 ## Generating and running test reports 
 **Note**: Generating an Allure report requires Allure to be installed on your machine.
 
-Make sure to run the test report commands from the **projects** folder to generate and open the reports:
+Make sure to run the test report commands from the **projects** folder to generate and open the reports, the first 
+command will generate the report and the second command runs it
 
 HTML Report:
 ```bash 
+python -m pytest core_python/tests --html=core_python/reports/report.html --self-contained-html
 
-python -m pytest core_python/tests --html=core_python/reports/report.html --self-contained-html; start core_python\reports\report.html
+start core_python\reports\report.html
 ```
 ---
 Allure Report:
 ```bash 
-
-python -m pytest core_python/tests --alluredir=core_python/reports/allure-results; allure serve core_python/reports/allure-results
+python -m pytest core_python/tests --alluredir=core_python/reports/allure-results
+ 
+allure serve core_python/reports/allure-results
 ```
 
 
