@@ -15,6 +15,8 @@ from unittest.mock import patch
     ([" ", "abc", "3"], "3"),
 ])
 def test_get_build_choice(inputs, expected):
+    """Testing get_build_choice, the first two inputs in the inner list are
+    invalid and the last input is valid, user input is mocked with patch"""
     with patch("builtins.input", side_effect=inputs):
         assert pcb.get_build_choice() == expected
 
@@ -24,11 +26,15 @@ def test_get_build_choice(inputs, expected):
     ([" ", "awq", "2"], "2"),
 ])
 def test_get_platform_choice(inputs, expected):
+    """Testing get_platform_choice, the first two inputs in the inner list are
+    invalid and the last input is valid, user input is mocked with patch"""
     with patch("builtins.input", side_effect=inputs):
         assert pcb.get_platform_choice() == expected
 
 
 def test_json_load_parts():
+    """Testing json_load_parts, if there are any errors opening the file or
+     if the actual file is incorrect the test will fail"""
     json_path = Path(__file__).parent.parent / "src" / "part_list.json"
     with open(json_path, "r") as fh:
         expected = json.loads(fh.read())

@@ -47,7 +47,7 @@ Your choice: """)
 
 
 def json_load_parts():
-    "Loads the part list from the json file"
+    """Loads the part list from the json file"""
     json_file = Path(__file__).parent / "part_list.json"
     try:
         with open(json_file, "r") as fh:
@@ -79,6 +79,7 @@ def print_summary(customer_build):
 
 
 def main():
+    """Activation of all functions to generate build"""
     choice = get_build_choice()
     platform_choice = get_platform_choice()
     customer_build = json_load_parts()[choice][platform_choice]
