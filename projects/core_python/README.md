@@ -7,6 +7,13 @@ This project allows users to select a PC build (low, mid or high budget) and pla
 Loads component details from a JSON file, and prints a summary with full details
 
 
+## Running the project
+
+Make sure to run the file from the **projects** folder using the command:
+```bash
+python core_python/src/pc_builder.py
+```
+
 ## Running tests
 
 Make sure to run the test command from the **projects** folder using the command:
