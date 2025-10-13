@@ -1,6 +1,6 @@
 """
 Tests for pc_builder Project, testing both valid and invalid inputs,
-also includes mocking user input for the testing
+also includes mocking user input for the testing with Patch and main() integration test
 """
 
 import core_python.src.pc_builder as pcb
@@ -41,5 +41,42 @@ def test_json_load_parts():
     actual = pcb.json_load_parts()
     assert actual == expected
 
+
+
+def test_main():
+    """Test main for integration workflow"""
+    with patch("builtins.input", side_effect=["1", "2"]), \
+            patch("core_python.src.pc_builder.json_load_parts") as mock_json_load, \
+            patch("core_python.src.pc_builder.print_summary") as mock_print_summary:
+
+        mock_json_load.return_value = {
+            "1": {
+                "2": {
+                    "CPU - Intel Core i5-12400F": 150,
+                    "CPU Cooler - be quiet! Pure Rock 2": 35,
+                    "Motherboard - MSI H610M Mortar": 85,
+                    "RAM - G.Skill Ripjaws 16GB DDR4-3200": 50,
+                    "Storage - 500GB WD Blue SN570 NVMe": 40,
+                    "GPU - NVIDIA RTX 5050": 230,
+                    "PSU - EVGA 550W Bronze 80+": 45,
+                    "Case - Phanteks P300A": 40
+                }
+            }
+        }
+
+        pcb.main()
+
+
+        expected_build = {
+            "CPU - Intel Core i5-12400F": 150,
+            "CPU Cooler - be quiet! Pure Rock 2": 35,
+            "Motherboard - MSI H610M Mortar": 85,
+            "RAM - G.Skill Ripjaws 16GB DDR4-3200": 50,
+            "Storage - 500GB WD Blue SN570 NVMe": 40,
+            "GPU - NVIDIA RTX 5050": 230,
+            "PSU - EVGA 550W Bronze 80+": 45,
+            "Case - Phanteks P300A": 40
+        }
+        mock_print_summary.assert_called_once_with(expected_build)
 
 
