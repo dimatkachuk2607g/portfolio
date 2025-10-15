@@ -9,8 +9,12 @@ There are also tests and test reports for both classes
 
 
 ## Running the project
+First install requirements from the **projects** folder using the command:
+```bash
+pip install -r oop_python/requirements.txt
+```
 
-Make sure to run the file from the **projects** folder using the command:
+Next run the code file from the **projects** folder using the command:
 ```bash
 python oop_python/src/character.py
 python -m oop_python.src.warrior

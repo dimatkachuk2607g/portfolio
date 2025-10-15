@@ -8,8 +8,12 @@ correct data types, and creating visualizations with a pie chart of the most pop
 
 
 ## Running the project
+First install requirements from the **projects** folder using the command:
+```bash
+pip install -r data_analysis/requirements.txt
+```
 
-Make sure to run the file from the **projects** folder using the command:
+Next run the code file from the **projects** folder using the command:
 ```bash
 python data_analysis/src/pokemon_analysis.py
 ```

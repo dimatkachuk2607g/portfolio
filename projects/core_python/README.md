@@ -8,8 +8,12 @@ Loads component details from a JSON file, and prints a summary with full details
 
 
 ## Running the project
+First install requirements from the **projects** folder using the command:
+```bash
+pip install -r core_python/requirements.txt
+```
 
-Make sure to run the file from the **projects** folder using the command:
+Next run the code file from the **projects** folder using the command:
 ```bash
 python core_python/src/pc_builder.py
 ```
