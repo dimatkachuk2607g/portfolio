@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iframe</title>
+</head>
+
+
+<body style="background-color: lightblue">
+
+    <h1>Practice iframe Automation</h1>
+
+    <p><b>Outside the iframe:</b></p>
+    <label>Radio Button A</label>
+    <input type="radio" name="option" value="A" style='position:relative; top:3px;'>
+    <label>Radio Button B</label>
+    <input type="radio" name="option" value="B" style='position:relative; top:3px;' >
+    <br><br>
+
+    <iframe id="practiceIframe"
+      width="250"
+      height="120"
+      style="border:2px solid black;"
+      srcdoc="
+         <p><b>Inside the iframe</b>:</p>
+         <label for='iframeCheckbox'>Checkbox:</label>
+         <input type='checkbox' id='iframeCheckbox' style='position:relative; top:3px;'>">
+    </iframe>
+    <br><br>
+
+    <h3>If you would like to return to the homepage, click the following link:</h3>
+    <ul>
+    <li><a href="index.html">Home page</a></li>
+    </ul>
+
+</body>
+
+
+
+</html>

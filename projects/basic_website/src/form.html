@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style> form label{
+        display: inline-block;
+        width: 80px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightblue">
+
+    <h1>Practice Filling Forms Automation</h1>
+
+    <form id="practiceForm">
+
+        <label for="firstname"> First Name:</label>
+        <input id="firstname" type="text" required pattern="^[A-Za-z]+$" ><br>
+
+        <label for="lastname"> Last Name:</label>
+        <input id="lastname" type="text" required pattern="^[A-Za-z]+$" ><br>
+
+        <label for="password"> Password:</label>
+        <input id="password" type="password" minlength="8" required ><br>
+
+        <label for="email"> Email:</label>
+        <input id="email" type="email" required ><br>
+
+        <label for="age"> Age:</label>
+        <input id="age" type="number" required ><br>
+
+        <label for="country">Country:</label>
+        <select id="country" required>
+         <option value=""></option>
+         <option value="usa">USA</option>
+         <option value="israel">Israel</option>
+         <option value="uk">UK</option>
+        </select><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" id="coding" name="hobbies" value="coding" >
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="gaming" name="hobbies" value="gaming" >
+        <label for="gaming">Gaming</label><br>
+
+        <input type="submit" value="Submit Form" style="width:300px">
+
+    </form>
+    <br><br>
+
+    <h3>If you would like to return to the homepage, click the following link:</h3>
+    <ul>
+    <li><a href="index.html">Home page</a></li>
+    </ul>
+
+    <script>
+        document.getElementById("practiceForm").addEventListener("submit", function (error) {
+         if (!this.checkValidity()) {
+           error.preventDefault();
+           alert("Correct the highlighted fields before submitting.");
+         } else {
+           error.preventDefault();
+           alert("Form submitted successfully");
+         }
+        });
+    </script>
+
+</body>
+
+</html>
