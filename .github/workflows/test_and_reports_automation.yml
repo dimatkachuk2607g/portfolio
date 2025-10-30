@@ -1,0 +1,20 @@
+name: Test and Reports Automation
+on: push
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Load repository
+        uses: actions/checkout@v4
+        
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.13    
+
+      - name: Install requirements
+        run: |
+          cd projects
+          pip install -r core_python/requirements.txt
+          
