@@ -1,4 +1,4 @@
-# PC Builder Project
+# PC Builder Project + GitHub Actions Automation
 
 
 
@@ -6,6 +6,9 @@ This project allows users to select a PC build (low, mid or high budget) and pla
 
 Loads component details from a JSON file, and prints a summary with full details
 
+Additionally whenever code changes are pushed,
+all pytest tests will automatically run in a GitHub Actions
+workflow and produce an artifact which contains all reports
 
 ## Running the project
 First install requirements from the **projects** folder using the command:
