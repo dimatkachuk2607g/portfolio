@@ -20,3 +20,16 @@ jobs:
           cd projects
           pip install -r core_python/requirements.txt
           
+      - name: Run pytest and generate reports
+        run: |
+          cd projects
+          python -m pytest core_python/tests --html=core_python/reports/report.html --self-contained-html --alluredir=core_python/reports/allure-results
+
+      - name: Upload test reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: pytest-reports
+          path: projects/core_python/reports/
+
+
+          
