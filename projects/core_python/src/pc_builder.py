@@ -82,7 +82,7 @@ def main():
     """Activation of all functions to generate build"""
     choice = get_build_choice()
     platform_choice = get_platform_choice()
-    customer_build = jon_load_parts()[choice][platform_choice]
+    customer_build = json_load_parts()[choice][platform_choice]
     print_summary(customer_build)
 
 
