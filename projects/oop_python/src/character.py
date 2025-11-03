@@ -73,8 +73,8 @@ Character Health: {self.health}
 
 def main():
     """Sample fight between two characters"""
-    aragon = Character("Aragon", 45, 50, 5, 80)
-    goblin = Character("Goblin", 20, 8, 3, 10)
+    aragon = Character("Aragon", 45, 20, 5, 80)
+    goblin = Character("Goblin", 20, 8, 3, 20)
 
     print("\nInitialize both characters:")
     print("-" * 40)
@@ -82,22 +82,25 @@ def main():
     print(goblin, end="")
     print("-" * 40 ,"\n\n")
 
+    battle_counter = 1
+    while aragon.is_alive() and goblin.is_alive():
+        print(f"\nBattle_{battle_counter}:")
+        print("-" * 40)
+        print(goblin.attack_target(aragon))
+        print(aragon.attack_target(goblin))
+        print(f"Goblin remaining health: {goblin.health}")
+        print(f"Aragon remaining health: {aragon.health}")
+        print(aragon.heal(2))
+        print("-" * 40 ,"\n\n")
 
-    print("Battle:")
-    print("-" * 40)
-    print(goblin.attack_target(aragon))
-    print(aragon.attack_target(goblin))
-    print(f"Goblin is still alive? {goblin.is_alive()}, remaining health: {goblin.health}")
-    print(f"Aragon is still alive? {aragon.is_alive()}, remaining health: {aragon.health}")
-    print(aragon.heal(2))
-    print("-" * 40 ,"\n\n")
 
+        print("Characters after battle:")
+        print("-" * 40)
+        print(aragon)
+        print(goblin, end="")
+        print("-" * 40 ,"")
+        battle_counter += 1
 
-    print("Characters after battle:")
-    print("-" * 40)
-    print(aragon)
-    print(goblin, end="")
-    print("-" * 40 ,"")
 
 if __name__ == "__main__":
     main()

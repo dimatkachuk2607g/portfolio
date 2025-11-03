@@ -48,22 +48,25 @@ def main():
     print(dragon, end="")
     print("-" * 40 ,"\n\n")
 
+    battle_counter = 1
+    while conan.is_alive() and dragon.is_alive():
+        print(f"\nBattle_{battle_counter}:")
+        print("-" * 40)
+        print(dragon.attack_target(conan))
+        print(conan.rage_attack(dragon))
+        print(f"Dragon remaining health: {dragon.health}")
+        print(f"Conan remaining health: {conan.health}")
+        print(conan.heal(100))
+        print("-" * 40 ,"\n\n")
 
-    print("Battle:")
-    print("-" * 40)
-    print(dragon.attack_target(conan))
-    print(conan.rage_attack(dragon))
-    print(f"Dragon is still alive? {dragon.is_alive()}, remaining health: {dragon.health}")
-    print(f"Conan is still alive? {conan.is_alive()}, remaining health: {conan.health}")
-    print(conan.heal(2))
-    print("-" * 40 ,"\n\n")
 
+        print("Characters after battle:")
+        print("-" * 40)
+        print(conan)
+        print(dragon, end="")
+        print("-" * 40 ,"")
+        battle_counter += 1
 
-    print("Characters after battle:")
-    print("-" * 40)
-    print(conan)
-    print(dragon, end="")
-    print("-" * 40 ,"")
 
 if __name__ == "__main__":
     main()
