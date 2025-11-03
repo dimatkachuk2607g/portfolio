@@ -14,9 +14,11 @@ First install requirements from the **projects** folder using the command:
 pip install -r oop_python/requirements.txt
 ```
 
-Next run the code file from the **projects** folder using the command:
+Next run the code files from the **projects** folder using the following commands,
+do note the warrior inherits from character but each file can run independently
 ```bash
 python oop_python/src/character.py
+
 python -m oop_python.src.warrior
 ```
 

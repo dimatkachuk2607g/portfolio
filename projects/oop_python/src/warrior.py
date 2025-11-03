@@ -42,7 +42,7 @@ def main():
     conan = Warrior("Conan", 47, 150, 30, 300, 500)
     dragon = Character("dragon", 1500, 200, 50, 1000)
 
-    print("Initialize both characters:")
+    print("\nInitialize both characters:")
     print("-" * 40)
     print(conan)
     print(dragon, end="")

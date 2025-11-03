@@ -76,7 +76,7 @@ def main():
     aragon = Character("Aragon", 45, 50, 5, 80)
     goblin = Character("Goblin", 20, 8, 3, 10)
 
-    print("Initialize both characters:")
+    print("\nInitialize both characters:")
     print("-" * 40)
     print(aragon)
     print(goblin, end="")
