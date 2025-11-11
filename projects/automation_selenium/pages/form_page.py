@@ -21,8 +21,8 @@ class FormPage:
         self.country = (By.ID, "country")
         self.radio_male = (By.CSS_SELECTOR, "input[value='male']")
         self.radio_female = (By.XPATH, "//input[@value='female']")
-        self.checkb_gaming = (By.ID, "coding")
-        self.checkb_coding = (By.ID, "gaming")
+        self.checkb_coding = (By.ID, "coding")
+        self.checkb_gaming = (By.ID, "gaming")
         self.alert_button = (By.CSS_SELECTOR, "input[type='submit']")
 
 
@@ -60,10 +60,10 @@ class FormPage:
         self.driver.find_element(*self.radio_female).click()
 
     def checkbox_coding(self):
-        self.driver.find_element(*self.checkb_gaming).click()
+        self.driver.find_element(*self.checkb_coding).click()
 
     def checkbox_gaming(self):
-        self.driver.find_element(*self.checkb_coding).click()
+        self.driver.find_element(*self.checkb_gaming).click()
 
     def submit_alert(self):
         self.driver.find_element(*self.alert_button).click()
