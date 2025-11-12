@@ -1,5 +1,6 @@
 """
-Page Object for automating the iframe page, reads text and verifies the iframe is working correctly
+Page Object for automating the iframe page,
+defines all the locators and methods to use them through tests
 """
 
 from selenium.webdriver.common.by import By

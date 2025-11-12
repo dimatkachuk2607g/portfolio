@@ -1,5 +1,6 @@
 """
-Tests for the index Page Object, asserting every method and link to have the correct information
+Tests for the index Page Object
+asserting every method and link to have the correct information
 """
 
 def test_text(index_page):

@@ -1,5 +1,6 @@
 """
-Tests for the form Page Object, asserting every method and form functionality
+Tests for the form Page Object
+asserting every method and form functionality
 """
 
 def test_text(form_page):

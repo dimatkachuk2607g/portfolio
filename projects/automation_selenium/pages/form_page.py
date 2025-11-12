@@ -1,5 +1,6 @@
 """
-Page Object for automating the form page, reads text and verifies the form is working properly
+Page Object for automating the form page
+defines all the locators and methods to use them through tests
 """
 
 from selenium.webdriver.common.by import By

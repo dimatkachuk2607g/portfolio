@@ -1,5 +1,6 @@
 """
-Page Object for automating the Index page, reads text and verifies all links on the page
+Page Object for automating the Index page
+defines all the locators and methods to use them through tests
 """
 
 from selenium.webdriver.common.by import By

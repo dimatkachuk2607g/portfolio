@@ -1,5 +1,6 @@
 """
-Tests for the iframe Page Object, asserting every method and iframe functionality
+Tests for the iframe Page Object
+asserting every method and iframe functionality
 """
 
 def test_text(iframe_page):
