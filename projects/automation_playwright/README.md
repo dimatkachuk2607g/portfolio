@@ -10,6 +10,7 @@ all pytest tests will automatically run in a GitHub Actions
 workflow and produce an artifact which contains all reports
 
 
+
 ## Running the project
 First install requirements from the **projects** folder using the command:
 ```bash
