@@ -1,6 +1,8 @@
-name: Test and Reports Automation
-on: 
+name: core_python Test and Reports Automation
+on:
   push:
+    paths:
+      - 'projects/core_python/**'
   workflow_dispatch:
 
 jobs:
