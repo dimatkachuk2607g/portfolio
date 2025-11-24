@@ -16,9 +16,11 @@ def driver():
     Headless Mode: remove comment tags from the options below and
     add options=options as argument to driver = webdriver.Chrome()
     """
-    #options = webdriver.ChromeOptions()
-    #options.add_argument("--headless")
-    driver = webdriver.Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    driver = webdriver.Chrome(options=options)
     driver.maximize_window()
     driver.implicitly_wait(10)
     yield driver
