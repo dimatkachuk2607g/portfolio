@@ -13,11 +13,11 @@ from automation_selenium.pages.index_page import IndexPage
 @pytest.fixture(scope="function")
 def driver():
     """driver initialization
-    Headless Mode: remove comment tags from the options below and
-    add options=options as argument to driver = webdriver.Chrome()
+    Headless Mode: add # before "options.add_argument("--headless")"
+    in line 20 to disable headless mode
     """
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(options=options)
