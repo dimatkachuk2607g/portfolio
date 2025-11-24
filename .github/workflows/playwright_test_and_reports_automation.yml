@@ -21,6 +21,10 @@ jobs:
         run: |
           cd projects
           pip install -r automation_playwright/requirements.txt
+
+      - name: Install Light Browsers
+        run:
+          playwright install
           
       - name: Run pytest and generate reports
         run: |
