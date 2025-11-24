@@ -1,4 +1,4 @@
-# Selenium Automation Project + Github test and report autmoation
+# Selenium Automation Project + Github test and report automation
 
 This is a frontend automation project done with Selenium following principles of the POM model
 to have clean and scalable code
