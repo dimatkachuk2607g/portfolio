@@ -12,12 +12,13 @@ from automation_selenium.pages.index_page import IndexPage
 
 @pytest.fixture(scope="function")
 def driver():
-    """driver initialization
+    """
+    driver initialization.
     Headless Mode: add # before "options.add_argument("--headless")"
-    in line 20 to disable headless mode
+    in line 21 to disable headless mode and see the automation in action
     """
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(options=options)
