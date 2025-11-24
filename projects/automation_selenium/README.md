@@ -11,8 +11,8 @@ First install requirements from the **projects** folder using the command:
 ```bash
 pip install -r automation_selenium/requirements.txt
 ```
-**Note:** By default the project runs with headless mode disabled so you can see the
-execution progress, headless mode can be enabled in the conftest file at the driver fixture
+**Note:** By default the project runs with headless mode enabled so you can't see the
+execution progress, headless mode can be disabled in the conftest file at the driver fixture
 
 Next since the project follows the POM model the automation and tests run side by side
 meaning the tests will activate the actual automation,
