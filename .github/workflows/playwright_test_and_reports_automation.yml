@@ -1,0 +1,37 @@
+name: playwright Test and Reports Automation
+on:
+  push:
+    paths:
+      - 'projects/automation_playwright/**'
+  workflow_dispatch:
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Load repository
+        uses: actions/checkout@v4
+        
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.13    
+
+      - name: Install requirements
+        run: |
+          cd projects
+          pip install -r automation_playwright/requirements.txt
+          
+      - name: Run pytest and generate reports
+        run: |
+          cd projects
+          python -m pytest automation_playwright/tests --html=automation_playwright/reports/report.html --self-contained-html --alluredir=automation_playwright/reports/allure-results
+
+      - name: Upload test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-reports
+          path: projects/automation_playwright/reports/
+
+
+          
