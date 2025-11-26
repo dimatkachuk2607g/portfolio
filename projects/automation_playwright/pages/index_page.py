@@ -10,9 +10,6 @@ class IndexPage:
     def __init__(self, page:Page):
         self.page = page
 
-    def title(self):
-        return self.page
-
     def header(self):
         return self.page.get_by_role("heading", name="Basic Website for Automation")
 

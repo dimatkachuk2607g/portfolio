@@ -7,14 +7,14 @@ from playwright.sync_api import expect, Dialog
 
 
 def test_title(form_page):
-    expect(form_page.title()).to_have_title("Form")
+    expect(form_page.page).to_have_title("Form")
 
 def test_header(form_page):
     expect(form_page.header()).to_be_visible()
 
 def test_homepage_link(form_page):
     form_page.homepage_link().click()
-    expect(form_page.title()).to_have_title("Automation Practice Homepage")
+    expect(form_page.page).to_have_title("Automation Practice Homepage")
 
 def test_form(form_page):
     form_page.firstname().fill("Arnold")
