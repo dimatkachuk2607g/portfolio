@@ -1,3 +1,6 @@
+"""
+Shared pytest fixtures for playwright pages to avoid repetitive driver and object creation
+"""
 
 import pytest
 from playwright.sync_api import Page
