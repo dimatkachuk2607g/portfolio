@@ -9,3 +9,9 @@ To install all requirements for every project at once, from this **projects** fo
 
 ```bash
 pip install -r requirements.txt
+```
+
+For Playwright also run:
+```bash
+playwright install
+```
