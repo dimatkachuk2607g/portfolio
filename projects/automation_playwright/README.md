@@ -15,6 +15,11 @@ First install requirements from the **projects** folder using the command:
 ```bash
 pip install -r automation_playwright/requirements.txt
 ```
+Next install the browsers using the command:
+```bash
+playwright install
+```
+
 **Note:** By default the project runs with headless mode enabled so you can't see the
 execution progress, headless mode can be disabled using the second test command below,
 The tests run very quickly so If you want to watch the actions more slowly,
