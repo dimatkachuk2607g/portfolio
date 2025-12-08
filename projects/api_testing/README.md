@@ -11,7 +11,8 @@ First install requirements from the **projects** folder using the command:
 ```bash
 pip install -r api_testing/requirements.txt
 ```
-
+Next, since this is an API testing project, running the project simply means executing the
+tests using the command in the following section.
 ## Running tests
 
 Make sure to run the test command from the **projects** folder using the command:
