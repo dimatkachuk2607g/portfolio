@@ -2,7 +2,7 @@
 
 This project demonstrates a data cleaning and analysis using Python and Pandas,
 It focuses on processing Pokémon data, handling missing values, removing duplicates,forcing 
-correct data types, and creating visualizations with a pie chart of the most popular pokemon type 
+correct data types, and creating visualizations with a pie chart of the most popular pokemon type.
 
 
 
