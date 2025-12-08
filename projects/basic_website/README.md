@@ -1,8 +1,8 @@
 # Basic Automation Website Project
 
-This project is a basic website for QA automation testing in my selenium/playwright projects
+This project is a basic website for QA automation testing in my selenium/playwright projects.
 
-It includes three HTML pages with links, a form with different inputs and an iframe
+It includes three HTML pages with links, a form with different inputs and an iframe.
 
 
 ## Running the Project
