@@ -1,6 +1,6 @@
 # Playwright Automation Project With Github Actions test and report automation
 
-This is a frontend automation project done with Playwright following principles of the POM model
+This is a frontend automation project built with Playwright following principles of the POM model
 to have clean and scalable code.
 
 I have also created a small website to be used for this project, found under projects/basic_website/src.
