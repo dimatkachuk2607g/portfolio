@@ -7,10 +7,9 @@ It includes three HTML pages with links, a form with different inputs and an ifr
 
 ## Running the Project
 
-To run the website navigate to **projects/basic_website/src**
-
+To run the website navigate to **projects/basic_website/src** in your file explorer,
 open the homepage file `index.html` in your browser which contains direct
-links to the form and iframe pages
+links to the form and iframe pages.
 
 
 
