@@ -11,12 +11,11 @@ To install all requirements for every project at once, from this **projects** fo
 pip install -r requirements.txt
 ```
 
-For Playwright also run:
+If you want to run **Playwright** tests, also run:
 ```bash
 playwright install
 ```
 
 **Browser Note:**  
-Tests run with Chrome/Chromium by default and should work as is,
-If not, install Chrome manually. drivers are managed automatically by Selenium and Playwright
-in the newer versions.
+Tests use Chrome/Chromium by default, **Selenium and Playwright** handle browser drivers automatically in recent versions.
+If needed, you can also install Chrome manually to ensure compatibility.

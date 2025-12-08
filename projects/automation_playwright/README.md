@@ -10,9 +10,9 @@ all pytest tests will automatically run in a GitHub Actions
 workflow and produce an artifact which contains all reports.
 
 ### Browser Note:  
-Tests run with Chrome/Chromium by default and should work as is,
-If not, install Chrome manually. drivers are managed automatically by Playwright
-in the newer versions.
+Tests use Chrome/Chromium by default,
+Playwright handles browser drivers automatically in recent versions.
+If needed, you can also install Chrome manually to ensure compatibility.
 
 ## Running the project
 First install requirements from the **projects** folder using the command:
