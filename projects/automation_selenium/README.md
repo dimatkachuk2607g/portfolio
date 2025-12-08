@@ -1,13 +1,13 @@
 # Selenium Automation Project + Github Actions test and report automation
 
 This is a frontend automation project done with Selenium following principles of the POM model
-to have clean and scalable code
+to have clean and scalable code.
 
-I have also created a small website to be used for this project, found under projects/basic_website/src
+I have also created a small website to be used for this project, found under projects/basic_website/src.
 
 Additionally whenever code changes are pushed,
 all pytest tests will automatically run in a GitHub Actions
-workflow and produce an artifact which contains all reports
+workflow and produce an artifact which contains all reports.
 
 
 ## Running the project

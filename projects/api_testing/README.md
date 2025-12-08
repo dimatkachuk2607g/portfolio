@@ -1,10 +1,10 @@
 # Python API Automation Project using Requests, Pytest, and Postman
 
 This project contains pytest functions for testing the JSONPlaceholder API,
-It uses CRUD operations alongside the requests library to automate API testing
+It uses CRUD operations alongside the requests library to automate API testing.
 
 additionally includes a conftest file that can share fixtures to multiple
-pytest files, and the Postman collection used to visualize the responses
+pytest files, and the Postman collection used to visualize the responses.
 
 ## Running the project
 First install requirements from the **projects** folder using the command:
