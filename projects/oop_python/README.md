@@ -5,7 +5,7 @@
 This project implements a Character class and a Warrior subclass.  
 It includes attributes, methods for attacking, healing, rage attacks, and
 use of get/set with private attributes,
-There are also tests and test reports for both classes
+There are also tests and test reports for both classes.
 
 
 ## Running the project
