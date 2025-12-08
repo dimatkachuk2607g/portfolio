@@ -15,3 +15,8 @@ For Playwright also run:
 ```bash
 playwright install
 ```
+
+**Browser Note:**  
+Tests run with Chrome/Chromium by default and should work as is,
+If not, install Chrome manually. drivers are managed automatically by Selenium and Playwright
+in the newer versions.

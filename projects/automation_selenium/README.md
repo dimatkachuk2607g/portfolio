@@ -9,6 +9,10 @@ Additionally whenever code changes are pushed,
 all pytest tests will automatically run in a GitHub Actions
 workflow and produce an artifact which contains all reports.
 
+### Browser Note:  
+Tests run with Chrome/Chromium by default and should work as is,
+If not, install Chrome manually. drivers are managed automatically by Selenium
+in the newer versions.
 
 ## Running the project
 First install requirements from the **projects** folder using the command:
