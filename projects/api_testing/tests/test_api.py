@@ -3,6 +3,9 @@ Python requests with Pytest API Testing Project
 
 This file contains pytest functions for testing the JSONPlaceholder API,
 It uses CRUD operations alongside the requests library to automate API testing
+
+Note: JSONPlaceholder provides mock endpoints,
+so create/update/delete actions return valid responses without affecting real data.
 """
 
 import requests
