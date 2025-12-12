@@ -7,4 +7,4 @@ In this portfolio, there are **7 hands-on projects** located inside the `project
 - **Side projects:** `Website for Automation`, `Data Analysis` — covering web fundamentals and data analysis with Python.
 
 Additionally, the `projects` folder contains a README explaining how to install all requirements at once
-and solve potential path/moddule issues.
+and solve potential path/module issues.
