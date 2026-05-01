@@ -12,7 +12,7 @@ This portfolio contains **7 hands on projects** located inside the `projects` fo
 - `API Testing` — manual and automated API validation using **Postman**, **Python Requests**, request/response verification, assertions, status code validation, and JSON data validation  
 
 ### Supporting Projects
-- `Website for Automation` — a custom practice website built specifically for automation testing, used as the testing base for both the **Selenium** and **Playwright** projects  
+- `Website for Automation` — a practice website created specifically for automation testing, used as the testing base for both the **Selenium** and **Playwright** projects  
 - `Data Analysis` — Python based data validation, processing, and analysis of structured datasets  
 
 ### Setup
