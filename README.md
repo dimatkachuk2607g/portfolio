@@ -1,10 +1,19 @@
 # Dima Tkachuk — Python QA & Automation Portfolio
 
-Welcome to my GitHub portfolio. I am a **Junior QA Tester** specializing in **Python testing and automation**.  
+Welcome to my GitHub portfolio. I am a **QA Engineer** focused on **manual QA, Python based automation, web UI testing, and API validation**.
 
-In this portfolio, there are **7 hands-on projects** located inside the `projects` folder:  
-- **Core projects:** `Python`, `OOP Python`, `Selenium`, `Playwright`, `API Testing` — focused on **Python (basic and advanced), Pytest automation, API testing, and automation frameworks**, also including **basic GitHub Actions integration** for running tests and generating reports.  
-- **Side projects:** `Website for Automation`, `Data Analysis` — covering web fundamentals and data analysis with Python.
+This portfolio contains **7 hands on projects** located inside the `projects` folder:
 
-**Important:** The `projects` folder contains a README explaining how to install all requirements at once
-and solve potential path/module issues.
+### Core QA & Automation Projects
+- `Python` — core Python programming, scripting, and working with **JSON** files  
+- `OOP Python` — object oriented programming principles and design  
+- `Selenium` — web UI automation using **Python + Pytest** with the **Page Object Model** for scalable and maintainable test code  
+- `Playwright` — modern end to end automation using **Python + Pytest** with the **Page Object Model** for clean and scalable test code  
+- `API Testing` — manual and automated API validation using **Postman**, **Python Requests**, request/response verification, assertions, status code validation, and JSON data validation  
+
+### Supporting Projects
+- `Website for Automation` — a custom practice website built specifically for automation testing, used as the testing base for both the **Selenium** and **Playwright** projects  
+- `Data Analysis` — Python based data validation, processing, and analysis of structured datasets  
+
+### Setup
+**Important:** The `projects` folder contains a README explaining how to install all requirements at once, set up the environment correctly, and solve common path or module issues before running the projects.
