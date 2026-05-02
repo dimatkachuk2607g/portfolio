@@ -1,6 +1,6 @@
 # Dima Tkachuk — Python QA & Automation Portfolio
 
-Welcome to my GitHub portfolio. I am a **QA Engineer** focused on **manual QA, Python based automation, web UI testing, and API validation**.
+Welcome to my GitHub portfolio. I am a **QA Engineer** focused on **Manual QA, Python based automation, Web UI testing, and API validation**.
 
 This portfolio contains **7 hands on projects** located inside the `projects` folder:
 
