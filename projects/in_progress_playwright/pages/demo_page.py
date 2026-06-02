@@ -11,3 +11,6 @@ class DemoPage():
     def checkbox_1(self):
         return self.page.locator("#checkboxes input[type='checkbox']").nth(0)
 
+    def checkbox_2(self):
+        return self.page.locator("#checkboxes input[type='checkbox']").nth(1)
+

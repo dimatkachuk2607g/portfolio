@@ -15,4 +15,13 @@ def test_checkbox_1(demo_page):
     expect(demo_page.checkbox_1()).not_to_be_checked()
     demo_page.checkbox_1().click()
     expect(demo_page.checkbox_1()).to_be_checked()
+
+
+def test_checkbox_2(demo_page):
+    demo_page.checkboxes_url().click()
+    expect(demo_page.checkbox_2()).to_be_checked()
+    demo_page.checkbox_2().click()
+    expect(demo_page.checkbox_2()).not_to_be_checked()
+
+
     
